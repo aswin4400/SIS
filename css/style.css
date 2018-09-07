@@ -21,3 +21,6 @@
     font-size: 80px;
     font-family: 'Monoton', cursive;
 }
+body{
+    background-image: url("/background.jpg");
+}
