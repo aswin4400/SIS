@@ -34,9 +34,9 @@
                         Student
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="StudReg.html">Student Registration</a>
+                        <a class="dropdown-item" href="/Admin/Student/StudReg.html">Student Registration</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">View Students</a>
+                        <a class="dropdown-item" href="/Admin/Student/StudView.html">View Students</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -45,9 +45,9 @@
                         Faculties
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Admin/Faculty/FacReg.html">Faculty Registration</a>
+                        <a class="dropdown-item" href="FacReg.html">Faculty Registration</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Admin/Faculty/FacView.html">View Faculty</a>
+                        <a class="dropdown-item" href="#">View Faculty</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
                         Subjects
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/Admin/Subject/SubEntry.html">Subject Registration</a>
+                        <a class="dropdown-item" href="#">Subject Registration</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">View Subjects</a>
                     </div>
@@ -78,43 +78,46 @@
     </nav>
     <br>
     <br>
-    <div class="container col-10">
-        <h1 class="headingsub" id="Student">Student List</h1>
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Student Name</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Date of Birth</th>
-                    <th scope="col">Place of Birth</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Password</th>
-                    <th scope="col">Oparation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Aravind</td>
-                    <td>Male</td>
-                    <td>07/10/1997</td>
-                    <td>Pothanicad</td>
-                    <td>Maleakudy House</td>
-                    <td>8281886068</td>
-                    <td>aravindjaimon1@gmail.com</td>
-                    <td>blahblahblah</td>
-                    <td>
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary">Delete</button>
-                            <button type="button" class="btn btn-secondary">Edit</button>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container">
+        <h1 class="headingsub" id="Student">Subject Registration</h1>
+        <form>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Faculty Name</label>
+                <div class="form-group col-md-10">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Aravind</option>
+                        <option value="2">Aswin</option>
+                        <option value="3">Hashim</option>
+                        <option value="4">Arun</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Semester</label>
+                <div class="form-group col-md-10">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">S1</option>
+                        <option value="2">S2</option>
+                        <option value="3">S3</option>
+                        <option value="4">S4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dob" class="col-sm-2 col-form-label">Subjects Name</label>
+                <div class="form-group col-md-10">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">English</option>
+                        <option value="2">Hindi</option>
+                        <option value="3">Malayalam</option>
+                        <option value="4">Maths</option>
+                    </select>
+                </div>
+            </div>
+        </form>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
